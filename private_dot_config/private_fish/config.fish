@@ -6,7 +6,7 @@ if status is-login
 end
 
 # greetings
-set -U fish_greeting
+set -g fish_greeting
 
 # alias 
 alias ls 'exa -l --git --icons --group-directories-first'
@@ -27,13 +27,13 @@ abbr fishconfig 'nvim ~/.config/fish/config.fish'
 abbr kittyconfig 'nvim ~/.config/kitty/kitty.conf'
 
 # @Plugins
-set -U fish_autosuggestion_strategy history
-set -U fzf_complete 1
-set -U fzf_preview_dir_cmd 'ls -la'
+set -g fish_autosuggestion_strategy history
+set -g fzf_complete 1
+set -g fzf_preview_dir_cmd 'ls -la'
 
 # @Variables
-set -Ux EDITOR nvim
-set -Ux TERMINAL kitty
+set -gx EDITOR nvim
+set -gx TERMINAL kitty
 
 # man pages con colores (bat como pager)
 set -gx MANPAGER "sh -c 'col -bx | bat -l man -p'"
@@ -42,26 +42,23 @@ set -gx MANROFFOPT "-c"
 set -gx VIRTUAL_ENV_DISABLE_PROMPT 1
 
 # WAYLAND & SWAY VARIABLES
-set -Ux XDG_CURRENT_DESKTOP sway
-set -Ux XDG_SESSION_DESKTOP sway
-set -Ux XDG_SESSION_TYPE wayland
-set -Ux GDK_BACKEND wayland,x11
-set -Ux CLUTTER_BACKEND wayland
-set -Ux MOZ_ENABLE_WAYLAND 1
-set -Ux LIBVA_DRIVER_NAME iHD
-set -Ux GST_VAAPI_ALL_DRIVERS 1
-set -Ux NODE_OPTIONS "--no-warnings"
-set -Ux PREFER_LOW_POWER 1
-set -Ux QT_QPA_PLATFORM "wayland;xcb"
-set -Ux _JAVA_AWT_WM_NONREPARENTING 1
-set -Ux GRIM_DISABLE_DMABUF 1
-set -Ux SDL_VIDEODRIVER wayland
+set -gx XDG_CURRENT_DESKTOP sway
+set -gx XDG_SESSION_DESKTOP sway
+set -gx XDG_SESSION_TYPE wayland
+set -gx GDK_BACKEND wayland,x11
+set -gx CLUTTER_BACKEND wayland
+set -gx MOZ_ENABLE_WAYLAND 1
+set -gx LIBVA_DRIVER_NAME iHD
+set -gx GST_VAAPI_ALL_DRIVERS 1
+set -gx NODE_OPTIONS "--no-warnings"
+set -gx PREFER_LOW_POWER 1
+set -gx QT_QPA_PLATFORM "wayland;xcb"
+set -gx _JAVA_AWT_WM_NONREPARENTING 1
+set -gx GRIM_DISABLE_DMABUF 1
+set -gx SDL_VIDEODRIVER wayland
 
 # ssh
-set -Ux SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
-
-# Added by Antigravity CLI installer
-set -gx PATH "/home/microbread/.local/bin" $PATH
+set -gx SSH_AUTH_SOCK "$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # Flutter
 set -gx PATH "$HOME/flutter/bin" $PATH

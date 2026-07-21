@@ -3,3 +3,9 @@ components-list.md
 .config/nvim/undodir
 .config/nvim/spell
 .config/fish/fish_variables
+
+# fisher-managed plugin files (reinstalled from fish_plugins via `fisher update`)
+.config/fish/completions/*
+.config/fish/conf.d/z.fish
+.config/fish/functions/fisher.fish
+.config/fish/functions/__z*.fish
