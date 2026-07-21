@@ -1,0 +1,68 @@
+window {
+    background: rgba(23, 16, 11, 0.75);
+    font-family: "GeistMono Nerd Font Propo", monospace;
+    font-weight: 500;
+}
+
+button {
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 30%, center;
+    background-size: 30%, cover;
+    border: 1px solid rgba(224, 138, 60, 0.55);
+    box-shadow: inset 0 1px 0 rgba(224, 138, 60, 0.12), 0 4px 8px -4px rgba(5, 2, 1, 0.8);
+    border-radius: 6px;
+    color: #E8D5B0;
+    font-size: 16px;
+    margin: 12px;
+    min-width: 160px;
+    min-height: 90px;
+    transition: all 0.15s ease-in-out;
+}
+
+button:focus,
+button:hover {
+    background-color: rgba(64, 58, 54, 0.95);
+    border-color: rgba(224, 138, 60, 0.9);
+    box-shadow: inset 0 1px 0 rgba(224, 138, 60, 0.2), 0 0 10px rgba(224, 138, 60, 0.3);
+    color: #F2A65A;
+}
+
+#lock {
+    background-image: image(url("/home/microbread/.config/wlogout/icons/lock.png")),
+        linear-gradient(to bottom,
+            rgba(52, 48, 44, 0.92) 0%,
+            rgba(41, 37, 34, 0.88) 55%,
+            rgba(30, 27, 25, 0.90) 100%);
+}
+
+#suspend {
+    background-image: image(url("/home/microbread/.config/wlogout/icons/suspend.png")),
+        linear-gradient(to bottom,
+            rgba(52, 48, 44, 0.92) 0%,
+            rgba(41, 37, 34, 0.88) 55%,
+            rgba(30, 27, 25, 0.90) 100%);
+}
+
+#logout {
+    background-image: image(url("/home/microbread/.config/wlogout/icons/logout.png")),
+        linear-gradient(to bottom,
+            rgba(52, 48, 44, 0.92) 0%,
+            rgba(41, 37, 34, 0.88) 55%,
+            rgba(30, 27, 25, 0.90) 100%);
+}
+
+#reboot {
+    background-image: image(url("/home/microbread/.config/wlogout/icons/reboot.png")),
+        linear-gradient(to bottom,
+            rgba(52, 48, 44, 0.92) 0%,
+            rgba(41, 37, 34, 0.88) 55%,
+            rgba(30, 27, 25, 0.90) 100%);
+}
+
+#shutdown {
+    background-image: image(url("/home/microbread/.config/wlogout/icons/shutdown.png")),
+        linear-gradient(to bottom,
+            rgba(52, 48, 44, 0.92) 0%,
+            rgba(41, 37, 34, 0.88) 55%,
+            rgba(30, 27, 25, 0.90) 100%);
+}
