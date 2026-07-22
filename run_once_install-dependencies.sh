@@ -81,6 +81,14 @@ sudo pacman -S --needed --noconfirm \
     nautilus gvfs gvfs-mtp \
     swayimg mpv zathura zathura-pdf-mupdf obsidian
 
+# @Theme
+print_step "Descargando e instalando Colloid-gtk-theme (Colloid-Gruvbox-Dark)"
+sudo pacman -S --needed --noconfirm sassc
+rm -rf /tmp/Colloid-gtk-theme
+git clone --depth=1 https://github.com/vinceliuice/Colloid-gtk-theme.git /tmp/Colloid-gtk-theme
+/tmp/Colloid-gtk-theme/install.sh --theme orange -c dark --tweaks gruvbox -l
+rm -rf /tmp/Colloid-gtk-theme
+
 # @AUR Packages
 print_step "Instalando paquetes desde AUR..."
 yay -S --needed --noconfirm \
