@@ -33,8 +33,8 @@
 |------|-------|
 | **Cursor** | Bibata-Modern-Amber (24px) |
 | **Icons** | Adwaita (GTK built-in) |
-| **GTK theme** | TODO |
-| **Fonts** | Inter (UI) · GeistMono Nerd Font (mono / terminal / bar) |
+| **GTK theme** | Colloid-gtk-theme |
+| **Fonts** | GeistMono Nerd Font (mono / terminal / bar / UI) |
 
 ## Installation
 Everything is managed with **chezmoi**.
@@ -79,13 +79,12 @@ Everything is managed with **chezmoi**.
 * **Music:** mpd (`mpd.socket`), mpdscribble (scrobbler), rmpc (TUI client)
 * **Network:** NetworkManager, Bluetooth (bluez)
 * **WM:** SwayFX, Waybar, Mako, Fuzzel, Swaybg, Swayidle, Autotiling-RS
-* **Theming:** bibata-cursor-theme (cursor), Adwaita (icons, built-in)
+* **Theming:** bibata-cursor-theme (cursor), Adwaita (icons, built-in), Colloid-gtk-theme (gtk theme)
 * **Utilities:** Grim, Slurp, Swappy, Brightnessctl, Btop, Fzf, FD, Bat, Ripgrep, Eza, Zoxide, Wget, Unzip, Zip, P7zip, Fortune-mod
 * **Apps:** Nautilus, Cliphist, Neovim, Swayimg, Mpv, Zathura, Kitty, Fish
 
 ## Fonts
 * GeistMono Nerd Font (mono — main UI / terminal / bar)
-* ttf-inter (UI)
 * ttf-liberation
 * noto-fonts, noto-fonts-cjk, noto-fonts-emoji
 * ttf-nerd-fonts-symbols-mono

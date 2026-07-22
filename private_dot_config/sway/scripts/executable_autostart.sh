@@ -29,8 +29,8 @@ pgrep -f polkit-mate-authentication-agent-1 >/dev/null || \
     /usr/lib/mate-polkit/polkit-mate-authentication-agent-1 &
 
 # GTK theme
-gsettings set org.gnome.desktop.interface gtk-theme 'Windows Longhorn Plex'
-gsettings set org.gnome.desktop.interface color-scheme 'default'
+gsettings set org.gnome.desktop.interface gtk-theme 'Colloid-Orange-Dark-Gruvbox'
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 
 # micmute LED
 if [[ "$(pamixer --default-source --get-mute)" == "true" ]]; then
