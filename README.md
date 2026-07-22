@@ -4,6 +4,10 @@
   Minimalist SwayFX setup · inspired by melange.nvim, gruvbox and SH3
 </p>
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c86abbc2-3fde-4fc2-a455-3b30422a4899" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/765deeb5-f1c3-4fbe-90dc-39f617c2b228" />
+
+
 ---
 
 ## Components
