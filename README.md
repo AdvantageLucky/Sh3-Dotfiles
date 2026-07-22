@@ -18,6 +18,7 @@
 | **Bar** | Waybar |
 | **Terminal** | Kitty |
 | **Shell** | Fish (Eza · Zoxide · Fzf) |
+| **Text Editor** | Neovim |
 | **Launcher** | Fuzzel |
 | **Browser** | Zen Browser |
 | **Music** | mpd + rmpc |
